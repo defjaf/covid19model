@@ -9,7 +9,7 @@ If you are looking for the individual based model used in [Report 9](https://www
 
 This is the release related to [report 20](https://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-20-italy/), where we use mobility data to estimate situation in Italy. All other code is still the same.
 
-To run this code you can directly run the base-italy.r file or from command line after seting the current directory as the repository directory run the following command `Rscript base-italy.r base-italy google interventions '~ -1 + residential + transit + averageMobility' '~ -1 + residential + transit + averageMobility'`
+To run this code you can directly source the base-italy.r file in rstudio inside the project or from command line after setting the current directory as the repository directory run the following command `Rscript base-italy.r base-italy google interventions '~ -1 + residential + transit + averageMobility' '~ -1 + residential + transit + averageMobility'`
 
 The code for scenarios runs only in full mode not in short run or debug mode. Not running full model to estimate anything is not recommended and discouraged. Only full run should be used to get results.
 
@@ -26,7 +26,7 @@ You can directly get csv files [here](https://mrc-ide.github.io/covid19estimates
  
  :warning: base_general.r and base_general.stan, base_general_speed.stan and  	base_general_speed2.stan are now valid models for only version2
 
-:warning: This code is released with no support. We try our best to look at issues and pull request but can't help people with setup most of the time. We have docker images and conda enviornment file to make it easy for you to get started with the setup, any other approach assumes user can handle their computing enviornments approriately.
+:warning: This code is released with no support. We try our best to look at issues and pull request but can't help people with setup most of the time. We have docker images and conda environment file to make it easy for you to get started with the setup, any other approach assumes user can handle their computing environments approriately.
 
 :warning: This model is in active development and so parameter name and behaviours, and output file formats will change without notice.
 
@@ -90,5 +90,5 @@ Three different run modes are supported:
 
 # Results 
 * The results are stored in two folders results and figures.
-* Results has the stored stan fits and data used for plotting
+* Results have the stored stan fits and data used for plotting
 * Figures have the images with daily cases, daily death and Rt for all countries.
